@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "entrevistas.inglesdealtoimpacto.com" }],
+      "destination": "/entrevistas/index.html"
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "entrevistas.inglesdealtoimpacto.com" }],
+      "destination": "/entrevistas/:path*"
+    }
+  ]
+}
