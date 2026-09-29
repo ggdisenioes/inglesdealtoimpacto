@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English on Site · Inglés para Oil & Gas | Inglés de Alto Impacto</title>
+    <meta name="description" content="English on Site — Inglés de Alto Impacto + Mediciones Físicas Neuquén. Entrenamiento de inglés por niveles para profesionales de Oil & Gas. Nivel 1 disponible.">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@200;300;400;500;600&family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5D2V0QDT5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-C5D2V0QDT5');
+    </script>
+
+    <style>
+        :root {
+            --bg-base: #fdfcfb;
+            --bg-alt: #f6f2ee;
+            --dark-title: #0A2540;
+            --text-main: #3d4f5f;
+            --primary: #d9a7a7;
+            --primary-deep: #c48e8e;
+            --taupe: #8B7765;
+            --soft-blue: #8fa8c8;
+            --soft-blue-light: #b8cce0;
+            --navy: #0A2540;
+            --border-light: rgba(217, 167, 167, 0.2);
+            --border-blue: rgba(143, 168, 200, 0.2);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark-title);
+        }
+
+        /* ── Animaciones de entrada ── */
+        .reveal-up { opacity: 0; transform: translateY(25px); transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal-left { opacity: 0; transform: translateX(-25px); transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal-right { opacity: 0; transform: translateX(25px); transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal-zoom { opacity: 0; transform: scale(0.97); transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+        .is-visible { opacity: 1 !important; transform: translate(0) scale(1) !important; }
+
+        /* ── Navegación ── */
+        .nav-link {
+            font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.22em;
+            color: var(--text-main); position: relative; font-weight: 600;
+            transition: color 0.3s; padding-bottom: 2px;
+        }
+        .nav-link::after {
+            content:''; position:absolute; width:0; height:1px; bottom:-3px; left:0;
+            background: var(--primary); transition: width 0.4s ease;
+        }
+        .nav-link:hover::after, .nav-link.active::after { width:100%; }
+        .nav-link:hover, .nav-link.active { color: var(--primary-deep); }
+
+        /* ── Botones ── */
+        .btn-cta {
+            font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.22em;
+            border: 1px solid var(--dark-title); color: #fff;
+            background: var(--dark-title); padding: 1rem 2.8rem;
+            font-weight: 600; cursor: pointer; position: relative;
+            overflow: hidden; z-index: 1; display: inline-flex;
+            align-items: center; justify-content: center;
+            text-decoration: none;
+            transition: all 0.4s cubic-bezier(0.16,1,0.3,1);
+        }
+        .btn-cta::before {
+            content:''; position:absolute; inset:0;
+            background: var(--primary); transform: scaleX(0);
+            transform-origin: right; transition: transform 0.4s cubic-bezier(0.16,1,0.3,1);
+            z-index:-1;
+        }
+        .btn-cta:hover::before { transform:scaleX(1); transform-origin:left; }
+        .btn-cta:hover {
+            color:#fff; border-color:var(--primary);
+            transform:translateY(-3px);
+            box-shadow: 0 12px 24px rgba(217,167,167,0.2);
+        }
+        .btn-cta-sm { padding: 0.7rem 1.5rem; font-size: 0.6rem; letter-spacing: 0.18em; }
+        .btn-wsp { background:#25D366; border-color:#25D366; }
+        .btn-wsp::before { background:#1ead56; }
+        .btn-wsp:hover { border-color:#1ead56; }
+
+        /* ── Decorativo ── */
+        .section-divider { width: 48px; height: 2px; background: var(--primary); margin: 0 auto 2rem; border-radius: 1px; }
+
+        /* ── Acordeones ── */
+        .eos-acc-content { max-height:0; overflow:hidden; transition: max-height 0.6s cubic-bezier(0.16,1,0.3,1); }
+        .eos-acc-btn .eos-chev { transition: transform 0.3s ease; }
+        .eos-acc-btn.active .eos-chev { transform: rotate(180deg); }
+
+        /* ── Menú Móvil ── */
+        #mobile-menu { transition: opacity 0.3s ease; }
+    </style>
+</head>
+<body>
+
+    <!-- ═══════════════ HEADER ═══════════════ -->
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100/80 shadow-sm" id="main-header">
+        <div class="max-w-screen-xl mx-auto px-5 h-28 flex justify-between items-center relative">
+
+            <button class="lg:hidden text-[var(--dark-title)] relative z-20" id="mobile-toggle">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </button>
+
+            <nav class="hidden lg:flex flex-1 justify-center gap-8">
+                <a href="index.html#home" class="nav-link">Inicio</a>
+                <a href="index.html#sobre" class="nav-link">Sobre Mí</a>
+                <a href="index.html#servicios" class="nav-link active">Servicios</a>
+            </nav>
+
+            <a href="index.html" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:relative lg:left-auto lg:top-auto lg:translate-x-0 lg:translate-y-0 flex-shrink-0 cursor-pointer lg:mx-10 z-10 transition-transform duration-300 hover:scale-[1.03]">
+                <img src="logo.png" alt="IAI — Inglés de Alto Impacto by Alicia Di Paolo" class="h-28 w-auto">
+            </a>
+
+            <nav class="hidden lg:flex flex-1 justify-center gap-8 items-center">
+                <a href="index.html#testimonios" class="nav-link">Testimonios</a>
+                <a href="index.html#faq" class="nav-link">FAQ<span style="text-transform:lowercase">s</span></a>
+                <a href="index.html#contacto" class="nav-link text-[var(--primary-deep)] font-bold">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menú Móvil -->
+    <div id="mobile-menu" class="fixed inset-0 bg-[var(--bg-base)] z-[60] flex flex-col justify-center items-center opacity-0 pointer-events-none">
+        <button id="close-menu-btn" class="absolute top-7 right-7 text-[var(--dark-title)]">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <div class="flex flex-col gap-7 text-center w-full px-8">
+            <a href="index.html#home" class="text-3xl font-serif text-[var(--dark-title)] hover:text-[var(--primary)] transition-colors">Inicio</a>
+            <a href="index.html#sobre" class="text-3xl font-serif text-[var(--dark-title)] hover:text-[var(--primary)] transition-colors">Sobre Mí</a>
+            <a href="index.html#servicios" class="text-3xl font-serif text-[var(--dark-title)] hover:text-[var(--primary)] transition-colors">Servicios</a>
+            <a href="index.html#testimonios" class="text-3xl font-serif text-[var(--dark-title)] hover:text-[var(--primary)] transition-colors">Testimonios</a>
+            <a href="index.html#faq" class="text-3xl font-serif text-[var(--dark-title)] hover:text-[var(--primary)] transition-colors">FAQ<span style="text-transform:lowercase">s</span></a>
+            <div class="w-12 h-px bg-[var(--primary)] mx-auto my-2"></div>
+            <a href="index.html#contacto" class="text-3xl font-serif text-[var(--primary)] italic">Contacto</a>
+        </div>
+    </div>
+
+    <main class="pt-28">
+
+        <!-- ═══════════════ HERO ═══════════════ -->
+        <section class="relative bg-[var(--bg-base)] overflow-hidden border-b border-[var(--border-light)]">
+            <div class="absolute -right-32 top-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-[var(--bg-alt)] opacity-60 blur-3xl pointer-events-none hidden lg:block"></div>
+            <div class="max-w-3xl mx-auto px-6 py-24 md:py-28 text-center relative z-10 reveal-up">
+                <span class="text-[9px] uppercase tracking-[0.45em] text-[var(--taupe)] mb-6 block font-semibold">Inglés para la industria petrolera</span>
+                <h1 class="text-4xl md:text-6xl font-serif leading-[1.1] mb-4">English on Site</h1>
+                <p class="text-[10px] uppercase tracking-[0.4em] text-[var(--dark-title)] font-semibold mb-1">Nivel 1</p>
+                <p class="text-lg md:text-xl font-serif italic text-[var(--dark-title)] mb-8">Fundamentos Profesionales</p>
+                <div class="section-divider"></div>
+                <p class="text-2xl md:text-3xl font-serif italic text-[var(--primary)] mb-6">Inglés de Alto Impacto + Mediciones Físicas Neuquén</p>
+                <p class="text-[var(--text-main)] font-light text-lg leading-relaxed max-w-2xl mx-auto mb-10">Programa de entrenamiento para construir las bases de tu inglés laboral y empezar a hablar desde el comienzo.</p>
+                <a href="https://inglesdealtoimpacto-aliciadipaolo.tiendup.com/curso/entrevistas-laborales-en-ingles-preguntas-frecuentes-respuestas-estrategicas-y-entrenamiento-para-comunicar-con-confianza" target="_blank" rel="noopener" class="btn-cta">Acceder al curso</a>
+            </div>
+        </section>
+
+        <!-- ═══════════════ UNA PROPUESTA CREADA PARA OIL & GAS ═══════════════ -->
+        <section class="py-24 bg-white">
+            <div class="max-w-3xl mx-auto px-6">
+                <div class="text-center mb-14 reveal-up">
+                    <span class="text-[9px] uppercase tracking-[0.45em] text-[var(--taupe)] mb-4 block font-semibold">La alianza</span>
+                    <h2 class="text-3xl md:text-4xl font-serif">Una propuesta creada para <span class="italic text-[var(--primary)]">Oil &amp; Gas</span></h2>
+                    <div class="section-divider mt-6"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-[var(--bg-base)] border border-[var(--border-light)] rounded-xl p-7 md:p-9 reveal-up">
+                        <h3 class="text-xl font-serif mb-4">Inglés de Alto Impacto</h3>
+                        <div class="space-y-4 text-[var(--text-main)] font-light leading-[1.8] text-[15px]">
+                            <p>Programa creado y dirigido por <strong class="font-medium text-[var(--dark-title)]">Alicia Di Paolo</strong>, profesora, traductora y mentora de inglés profesional con más de 30 años de experiencia capacitando a profesionales, técnicos y personal operativo del sector corporativo e industrial.</p>
+                            <p>Su metodología está basada en una idea central:</p>
+                            <p class="text-[var(--dark-title)] font-medium italic border-l-2 border-[var(--primary)] pl-4">El inglés no sólo se estudia. También se entrena.</p>
+                            <p>El foco está puesto especialmente en la comunicación oral: speaking, listening y el desarrollo de mayor seguridad para utilizar el idioma en contextos profesionales.</p>
+                        </div>
+                    </div>
+                    <div class="bg-[var(--bg-base)] border border-[var(--border-blue)] rounded-xl p-7 md:p-9 reveal-up" style="transition-delay:.1s">
+                        <h3 class="text-xl font-serif mb-4">Mediciones Físicas Neuquén</h3>
+                        <div class="space-y-4 text-[var(--text-main)] font-light leading-[1.8] text-[15px]">
+                            <p class="font-medium text-[var(--dark-title)]">Una alianza que conecta el inglés con la industria</p>
+                            <p><strong class="font-medium text-[var(--dark-title)]">English on Site</strong> nace de la combinación de dos áreas de experiencia: el entrenamiento en comunicación en inglés de Inglés de Alto Impacto y el conocimiento de la industria de Mediciones Físicas Neuquén.</p>
+                            <p>Mediciones Físicas Neuquén aporta la mirada del sector, sus situaciones cotidianas, necesidades y lenguaje específico. Esto permite desarrollar un programa que no parte de ejemplos genéricos, sino de contextos reconocibles para quienes trabajan en Oil &amp; Gas, tanto en funciones técnicas como administrativas. <strong class="font-medium text-[var(--dark-title)]">Inglés aplicado a la realidad de la industria, no separado de ella.</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center reveal-up">
+                    <p class="text-xl md:text-2xl font-serif italic text-[var(--primary)] mb-3">Inglés de Alto Impacto + Mediciones Físicas Neuquén</p>
+                    <p class="text-[var(--text-main)] font-light italic leading-[1.8] max-w-2xl mx-auto">Una propuesta que combina entrenamiento en comunicación en inglés con conocimiento del entorno profesional en el que vas a utilizarlo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════ ACORDEONES ═══════════════ -->
+        <section class="py-24 bg-[var(--bg-alt)] border-y border-[var(--border-light)]">
+            <div class="max-w-3xl mx-auto px-6 space-y-4">
+
+                <!-- ¿Qué es ENGLISH ON SITE? -->
+                <div class="bg-white border border-[var(--border-light)] rounded-xl overflow-hidden reveal-up">
+                    <button class="eos-acc-btn w-full flex justify-between items-center gap-4 text-left p-6 md:p-7" onclick="toggleAcc(this)">
+                        <span class="text-lg md:text-xl font-serif">¿Qué es English on Site?</span>
+                        <svg class="eos-chev w-5 h-5 flex-shrink-0 text-[var(--primary-deep)]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="eos-acc-content">
+                        <div class="px-6 md:px-7 pb-7 space-y-4 text-[var(--text-main)] font-light leading-[1.8] text-[15px]">
+                            <p class="font-medium text-[var(--dark-title)]">Inglés para situaciones reales en Oil &amp; Gas</p>
+                            <p>English on Site es un programa intensivo de <strong class="font-medium text-[var(--dark-title)]">4 semanas</strong>, pensado para profesionales de la industria petrolera que están en una etapa inicial con el idioma, cuentan con una base de inglés y necesitan empezar a utilizarlo con mayor seguridad en situaciones reales de trabajo.</p>
+                            <p>No es un curso tradicional centrado en estudiar gramática o memorizar vocabulario técnico. Durante un mes vas a entrenar el inglés que necesitás para desenvolverte en situaciones concretas de tu actividad profesional.</p>
+                            <p>A lo largo del programa vas a trabajar, entre otras cosas, en:</p>
+                            <ul class="space-y-2">
+                                <li class="flex gap-2"><span class="text-[var(--primary)] flex-shrink-0">●</span>presentarte y explicar cuál es tu función y tus responsabilidades;</li>
+                                <li class="flex gap-2"><span class="text-[var(--primary)] flex-shrink-0">●</span>hablar sobre lo que está sucediendo en una operación o tarea;</li>
+                                <li class="flex gap-2"><span class="text-[var(--primary)] flex-shrink-0">●</span>comunicar problemas y situaciones que requieren atención;</li>
+                                <li class="flex gap-2"><span class="text-[var(--primary)] flex-shrink-0">●</span>pedir aclaraciones o confirmar información cuando no entendés algo;</li>
+                                <li class="flex gap-2"><span class="text-[var(--primary)] flex-shrink-0">●</span>explicar próximos pasos y acciones;</li>
+                                <li class="flex gap-2"><span class="text-[var(--primary)] flex-shrink-0">●</span>desarrollar mayor seguridad para expresarte oralmente en contextos laborales.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ¿A quién está dirigido? -->
+                <div class="bg-white border border-[var(--border-light)] rounded-xl overflow-hidden reveal-up">
+                    <button class="eos-acc-btn w-full flex justify-between items-center gap-4 text-left p-6 md:p-7" onclick="toggleAcc(this)">
+                        <span class="text-lg md:text-xl font-serif">¿A quién está dirigido?</span>
+                        <svg class="eos-chev w-5 h-5 flex-shrink-0 text-[var(--primary-deep)]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="eos-acc-content">
+                        <div class="px-6 md:px-7 pb-7 space-y-4 text-[var(--text-main)] font-light leading-[1.8] text-[15px]">
+                            <p class="font-medium text-[var(--dark-title)]">English on Site está dirigido a personas que trabajan en Oil &amp; Gas y áreas vinculadas, en campo, operaciones, logística, almacén, administración y otras funciones de la industria, y que se encuentran en una etapa inicial del inglés.</p>
+                            <p>No necesitás ser ingeniero ni tener formación universitaria. El programa está pensado para quienes ya tienen algún conocimiento básico del idioma, palabras, expresiones o estructuras simples, pero necesitan empezar a usar ese inglés de manera práctica en situaciones reales de trabajo.</p>
+                            <p class="text-[var(--primary-deep)] italic text-center">No importa cuál sea tu rol dentro de la industria.<br>Si necesitás empezar a usar tu inglés, este programa puede ser para vos.</p>
+                            <p class="font-medium text-[var(--dark-title)]">Si hoy estás en una etapa inicial, el objetivo no es que termines hablando inglés perfectamente. Es que al finalizar este primer módulo puedas empezar a presentarte, explicar qué hacés, hablar de tus responsabilidades, pedir aclaraciones, responder intercambios básicos y manejar situaciones cotidianas de tu trabajo con mayor seguridad.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ¿Cómo funciona? -->
+                <div class="bg-white border border-[var(--border-light)] rounded-xl overflow-hidden reveal-up">
+                    <button class="eos-acc-btn w-full flex justify-between items-center gap-4 text-left p-6 md:p-7" onclick="toggleAcc(this)">
+                        <span class="text-lg md:text-xl font-serif">¿Cómo funciona?</span>
+                        <svg class="eos-chev w-5 h-5 flex-shrink-0 text-[var(--primary-deep)]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="eos-acc-content">
+                        <div class="px-6 md:px-7 pb-7 space-y-4 text-[var(--text-main)] font-light leading-[1.8] text-[15px]">
+                            <p class="font-medium text-[var(--dark-title)]">100% online</p>
+                            <p>Vas a acceder al programa a través de una plataforma virtual, donde vas a encontrar las clases y los entrenamientos organizados semana a semana. Cada semana se habilita el nuevo contenido en la plataforma. En cada entrenamiento vas a aprender lenguaje aplicado a tu trabajo, practicarlo y llevarlo a la producción oral, con feedback para mejorar y volver a intentarlo. Podés avanzar desde cualquier dispositivo en los momentos que mejor se adaptan a tu jornada y agenda.</p>
+                            <p class="font-medium text-[var(--dark-title)]">El foco está en usar el idioma, no solamente en leer o estudiar teoría.</p>
+
+                            <p class="font-medium text-[var(--dark-title)] pt-2">Feedback personalizado</p>
+                            <p>A lo largo del programa vas a recibir devoluciones sobre tus producciones orales para saber:</p>
+                            <ul class="space-y-2">
+                                <li class="flex gap-2"><span class="text-[var(--primary)] flex-shrink-0">●</span>qué está funcionando bien;</li>
+                                <li class="flex gap-2"><span class="text-[var(--primary)] flex-shrink-0">●</span>qué necesitás corregir;</li>
+                                <li class="flex gap-2"><span class="text-[var(--primary)] flex-shrink-0">●</span>cómo mejorar tu pronunciación;</li>
+                                <li class="flex gap-2"><span class="text-[var(--primary)] flex-shrink-0">●</span>qué expresiones podés incorporar;</li>
+                                <li class="flex gap-2"><span class="text-[var(--primary)] flex-shrink-0">●</span>cómo comunicar una misma idea de manera más clara.</li>
+                            </ul>
+                            <p><strong class="font-medium text-[var(--dark-title)]">2 encuentros grupales en vivo con Alicia Di Paolo</strong> (dos lunes a las 20 h): sesiones grupales grabadas para quienes por razones de turno u operatividad no puedan conectarse en directo.</p>
+                            <p>Durante el programa tendremos <strong class="font-medium text-[var(--dark-title)]">dos laboratorios de práctica oral en vivo</strong>. No son clases de repaso ni de teoría: son espacios intensivos de entrenamiento para poner en práctica situaciones reales de comunicación, ganar fluidez y animarse a hablar junto a colegas de la industria.</p>
+
+                            <p class="font-medium text-[var(--dark-title)] pt-2">Un programa progresivo de 4 semanas</p>
+                            <p>Cada semana incorpora nuevas situaciones y reutilizás lo aprendido para que puedas ir ganando mayor seguridad al comunicarte.</p>
+                            <p class="font-medium text-[var(--dark-title)]">No es solamente aprender inglés. Es entrenarlo hasta empezar a usarlo en tu trabajo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ¿Qué hace diferente a English on Site? -->
+                <div class="bg-white border border-[var(--border-light)] rounded-xl overflow-hidden reveal-up">
+                    <button class="eos-acc-btn w-full flex justify-between items-center gap-4 text-left p-6 md:p-7" onclick="toggleAcc(this)">
+                        <span class="text-lg md:text-xl font-serif">¿Qué hace diferente a English on Site?</span>
+                        <svg class="eos-chev w-5 h-5 flex-shrink-0 text-[var(--primary-deep)]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="eos-acc-content">
+                        <div class="px-6 md:px-7 pb-7 space-y-4 text-[var(--text-main)] font-light leading-[1.8] text-[15px]">
+                            <p class="font-medium text-[var(--dark-title)]">English on Site no es una lista de vocabulario técnico ni una colección de frases para memorizar.</p>
+                            <p>Hay muchos recursos: traducciones, aplicaciones, vocabulario en segundos. El aprendizaje aparece cuando necesitás usar ese inglés en una situación real de trabajo: responder una pregunta, explicar qué hacés, dar información, pedir una aclaración, confirmar una instrucción o comunicar un problema.</p>
+                            <p>Por eso el programa está diseñado como un entrenamiento progresivo. Aprendés el lenguaje que necesitás, lo practicás, lo llevás a tu propia realidad laboral y lo usás en situaciones concretas hasta empezar a ganar mayor autonomía.</p>
+                            <p>Durante el recorrido vas a combinar práctica guiada, actividades aplicadas, entrenamiento con AYLA y feedback personalizado.</p>
+                            <p class="font-medium text-[var(--dark-title)]">No buscamos que memorices más inglés. Buscamos que empieces a usar el inglés que necesitás para trabajar.</p>
+                            <p class="text-[var(--primary-deep)] italic text-center">El producto visible es un curso de inglés.<br>El resultado es poder empezar a desenvolverte en inglés en el trabajo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ¿Qué vas a entrenar en estas 4 semanas? -->
+                <div class="bg-white border border-[var(--border-light)] rounded-xl overflow-hidden reveal-up">
+                    <button class="eos-acc-btn w-full flex justify-between items-center gap-4 text-left p-6 md:p-7" onclick="toggleAcc(this)">
+                        <span class="text-lg md:text-xl font-serif">¿Qué vas a entrenar en estas 4 semanas?</span>
+                        <svg class="eos-chev w-5 h-5 flex-shrink-0 text-[var(--primary-deep)]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="eos-acc-content">
+                        <div class="px-6 md:px-7 pb-7 space-y-4 text-[var(--text-main)] font-light leading-[1.8] text-[15px]">
+                            <p>A lo largo de las cuatro semanas vas a trabajar sobre situaciones como:</p>
+                            <div class="space-y-3">
+                                <p><strong class="font-medium text-[var(--dark-title)]">Presentarte profesionalmente.</strong> Explicar quién sos, cuál es tu rol, dónde trabajás y cuáles son tus responsabilidades.</p>
+                                <p><strong class="font-medium text-[var(--dark-title)]">Explicar qué está sucediendo.</strong> Describir tareas, operaciones y situaciones que están ocurriendo en el momento.</p>
+                                <p><strong class="font-medium text-[var(--dark-title)]">Comunicar problemas.</strong> Informar una dificultad, explicar qué pasó y pedir o brindar información.</p>
+                                <p><strong class="font-medium text-[var(--dark-title)]">Pedir aclaraciones y confirmar información.</strong> Saber qué decir cuando no entendés, necesitás que repitan algo o querés confirmar que interpretaste correctamente.</p>
+                                <p><strong class="font-medium text-[var(--dark-title)]">Hablar sobre próximos pasos.</strong> Explicar qué acciones siguen y qué necesita suceder después.</p>
+                            </div>
+                            <p class="font-medium text-[var(--dark-title)]">Todo con un lenguaje aplicable a situaciones reales de trabajo dentro de la industria.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ¿Qué podés lograr en estas 4 semanas? -->
+                <div class="bg-white border border-[var(--border-light)] rounded-xl overflow-hidden reveal-up">
+                    <button class="eos-acc-btn w-full flex justify-between items-center gap-4 text-left p-6 md:p-7" onclick="toggleAcc(this)">
+                        <span class="text-lg md:text-xl font-serif">¿Qué podés lograr en estas 4 semanas?</span>
+                        <svg class="eos-chev w-5 h-5 flex-shrink-0 text-[var(--primary-deep)]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="eos-acc-content">
+                        <div class="px-6 md:px-7 pb-7 space-y-4 text-[var(--text-main)] font-light leading-[1.8] text-[15px]">
+                            <p>El objetivo no es que en cuatro semanas "aprendas todo el inglés", sino que empieces a usar de manera práctica la base que ya tenés, incorporando expresiones y recursos que puedas aplicar en tu trabajo y ganando confianza para comunicarte.</p>
+                            <p>Es ayudarte a empezar a:</p>
+                            <ul class="space-y-2">
+                                <li class="flex gap-2"><span class="text-[var(--primary)] flex-shrink-0">●</span>usar de manera práctica el inglés que ya conocés;</li>
+                                <li class="flex gap-2"><span class="text-[var(--primary)] flex-shrink-0">●</span>incorporar expresiones que puedas aplicar en tu trabajo;</li>
+                                <li class="flex gap-2"><span class="text-[var(--primary)] flex-shrink-0">●</span>responder con mayor seguridad en situaciones habituales;</li>
+                                <li class="flex gap-2"><span class="text-[var(--primary)] flex-shrink-0">●</span>mejorar tu comprensión auditiva;</li>
+                                <li class="flex gap-2"><span class="text-[var(--primary)] flex-shrink-0">●</span>desarrollar mayor confianza al hablar;</li>
+                                <li class="flex gap-2"><span class="text-[var(--primary)] flex-shrink-0">●</span>depender menos de la traducción palabra por palabra;</li>
+                                <li class="flex gap-2"><span class="text-[var(--primary)] flex-shrink-0">●</span>empezar a construir una base de comunicación oral específicamente orientada al ámbito laboral.</li>
+                            </ul>
+                            <p class="font-medium text-[var(--dark-title)]">No buscamos perfección. Buscamos que empieces a comunicarte.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ═══════════════ TU RECORRIDO ═══════════════ -->
+        <section class="py-24 bg-white">
+            <div class="max-w-3xl mx-auto px-6">
+                <div class="text-center mb-14 reveal-up">
+                    <span class="text-[9px] uppercase tracking-[0.45em] text-[var(--taupe)] mb-4 block font-semibold">El programa, semana a semana</span>
+                    <h2 class="text-3xl md:text-4xl font-serif">Tu recorrido durante las <span class="italic text-[var(--primary)]">4 semanas</span></h2>
+                    <div class="section-divider mt-6"></div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-[var(--bg-base)] border border-[var(--border-light)] rounded-lg p-6 md:p-7 reveal-up">
+                        <h3 class="text-lg font-serif mb-2">Semana 1 — Who I am &amp; what I do</h3>
+                        <p class="text-[var(--text-main)] font-light leading-[1.7] text-[15px]">Presentarte, hablar de tu puesto, tareas, responsabilidades y equipo.</p>
+                    </div>
+                    <div class="bg-[var(--bg-base)] border border-[var(--border-light)] rounded-lg p-6 md:p-7 reveal-up" style="transition-delay:.05s">
+                        <h3 class="text-lg font-serif mb-2">Semana 2 — What's happening now</h3>
+                        <p class="text-[var(--text-main)] font-light leading-[1.7] text-[15px]">Dar información básica sobre lo que está ocurriendo y hacer un status update.</p>
+                    </div>
+                    <div class="bg-[var(--bg-base)] border border-[var(--border-light)] rounded-lg p-6 md:p-7 reveal-up" style="transition-delay:.1s">
+                        <h3 class="text-lg font-serif mb-2">Semana 3 — Problems &amp; immediate communication</h3>
+                        <p class="text-[var(--text-main)] font-light leading-[1.7] text-[15px]">Informar problemas, pedir ayuda, confirmar instrucciones y comunicar acciones inmediatas.</p>
+                    </div>
+                    <div class="bg-[var(--bg-base)] border border-[var(--border-light)] rounded-lg p-6 md:p-7 reveal-up" style="transition-delay:.15s">
+                        <h3 class="text-lg font-serif mb-2">Semana 4 — Next steps &amp; integrated practice</h3>
+                        <p class="text-[var(--text-main)] font-light leading-[1.7] text-[15px]">Explicar próximos pasos e integrar todo lo aprendido en situaciones laborales completas.</p>
+                    </div>
+                </div>
+
+                <p class="text-center text-[var(--dark-title)] font-medium leading-[1.8] mt-10 reveal-up max-w-2xl mx-auto">Cada semana incorpora nuevas herramientas y reutilizás lo anterior para que puedas empezar a comunicarte con mayor seguridad en situaciones reales de trabajo.</p>
+            </div>
+        </section>
+
+        <!-- ═══════════════ ACCEDER AL CURSO (reemplaza inversión) ═══════════════ -->
+        <section id="acceder" class="py-28 bg-[var(--bg-alt)] border-y border-[var(--border-light)] text-center relative overflow-hidden">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-white opacity-50 blur-[100px] pointer-events-none"></div>
+            <div class="max-w-2xl mx-auto px-6 relative z-10 reveal-zoom">
+                <span class="text-[9px] uppercase tracking-[0.45em] text-[var(--primary)] mb-6 block font-semibold">Nivel 1 · Disponible</span>
+                <h2 class="text-3xl md:text-4xl font-serif mb-6 leading-tight">Empezá a <span class="italic text-[var(--primary)]">usar</span> el inglés en tu trabajo</h2>
+                <p class="text-[var(--text-main)] font-light text-lg leading-relaxed mb-4">Inicio flexible: podés comenzar cualquier lunes del mes.</p>
+                <p class="text-[var(--text-main)] font-light leading-relaxed mb-10">Accedé al curso desde la tienda y reservá tu lugar en el Nivel 1. Los siguientes niveles estarán disponibles a partir de <strong class="font-medium text-[var(--dark-title)]">noviembre 2026</strong>.</p>
+                <a href="https://inglesdealtoimpacto-aliciadipaolo.tiendup.com/curso/entrevistas-laborales-en-ingles-preguntas-frecuentes-respuestas-estrategicas-y-entrenamiento-para-comunicar-con-confianza" target="_blank" rel="noopener" class="btn-cta shadow-lg">Acceder al curso</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="bg-[var(--bg-base)] py-16 text-center border-t border-[var(--border-light)]">
+        <div class="mb-8">
+            <p class="font-serif text-lg tracking-wider text-[var(--dark-title)] mb-2">Inglés de Alto Impacto <span class="text-[var(--primary)] font-sans font-light">×</span> Mediciones Físicas Neuquén</p>
+            <p class="text-[9px] uppercase tracking-[0.4em] text-[var(--taupe)] font-semibold mb-1">English on Site</p>
+            <p class="text-[var(--text-main)] font-light italic">Empezá a USAR el inglés en situaciones reales de trabajo.</p>
+        </div>
+        <div class="flex justify-center gap-7 mb-8 text-[8px] uppercase tracking-[0.3em] font-semibold text-[var(--taupe)] flex-wrap px-4">
+            <a href="index.html#home" class="hover:text-[var(--primary)] transition-colors">Inicio</a>
+            <a href="index.html#servicios" class="hover:text-[var(--primary)] transition-colors">Servicios</a>
+            <a href="index.html#contacto" class="hover:text-[var(--primary)] transition-colors">Contacto</a>
+        </div>
+        <div class="flex justify-center gap-5 mb-10">
+            <a href="https://www.instagram.com/ingles.de.alto.impacto/" target="_blank" class="w-9 h-9 rounded-full border border-[var(--border-light)] flex items-center justify-center text-[var(--taupe)] hover:text-[var(--primary)] hover:border-[var(--primary)] transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/aliciadipaolo-ingl%C3%A9sdealtoimpacto/" target="_blank" class="w-9 h-9 rounded-full border border-[var(--border-light)] flex items-center justify-center text-[var(--taupe)] hover:text-[var(--primary)] hover:border-[var(--primary)] transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>
+            </a>
+        </div>
+        <p class="text-[8px] uppercase tracking-[0.4em] text-[var(--taupe)]">&copy; 2026 Alicia Di Paolo. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- WhatsApp flotante -->
+    <a href="https://wa.me/5493487495835?text=Hola,%20Alicia.%20Vengo%20de%20la%20p%C3%A1gina%20de%20English%20on%20Site%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n." target="_blank"
+       class="fixed bottom-6 right-6 z-[100] bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 group">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+        <span class="absolute right-16 bg-white text-[var(--dark-title)] text-[9px] uppercase tracking-[0.2em] font-bold py-2 px-4 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Escribime</span>
+    </a>
+
+    <script>
+        function toggleAcc(btn) {
+            const content = btn.nextElementSibling;
+            const isOpen = btn.classList.contains('active');
+            if (isOpen) {
+                btn.classList.remove('active');
+                content.style.maxHeight = '0px';
+            } else {
+                btn.classList.add('active');
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        }
+
+        function initScrollAnimations() {
+            const obs = new IntersectionObserver(entries => {
+                entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('is-visible'); });
+            }, { threshold: 0.05 });
+            document.querySelectorAll('.reveal-up,.reveal-left,.reveal-right,.reveal-zoom').forEach(el => obs.observe(el));
+        }
+        window.addEventListener('scroll', initScrollAnimations);
+
+        document.getElementById('mobile-toggle').onclick = () => document.getElementById('mobile-menu').classList.remove('opacity-0', 'pointer-events-none');
+        document.getElementById('close-menu-btn').onclick = () => document.getElementById('mobile-menu').classList.add('opacity-0', 'pointer-events-none');
+
+        window.onload = () => { initScrollAnimations(); };
+    </script>
+</body>
+</html>
