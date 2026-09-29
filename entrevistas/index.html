@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entrevistas Laborales en Inglés · Alicia Di Paolo</title>
+<meta name="description" content="Entrenamiento online para comunicar tu valor con autoridad y seguridad en entrevistas laborales en inglés. Por Alicia Di Paolo, mentora de inglés profesional.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C5D2V0QDT5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C5D2V0QDT5');
+</script>
+<style>
+  :root{
+    --navy:#0A2540;
+    --bg:#F8F6F3;
+    --rosa-medio:#D6A9A9;
+    --taupe:#8B7765;
+    --rosa-clarito:#FAF1F1;
+    --beige:#EEE9E3;
+    --marron:#C4B5A5;
+    --body-text:#3D4F5F;
+    --serif:"Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", serif;
+    --sans:"Inter", system-ui, -apple-system, sans-serif;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);
+    background:var(--bg);
+    color:var(--body-text);
+    line-height:1.65;
+    font-size:17px;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ---------- Typography helpers ---------- */
+  h1,h2,h3,h4{font-family:var(--serif);color:var(--navy);font-weight:600;line-height:1.15}
+  .accent{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--rosa-medio)}
+  .eyebrow{
+    font-family:var(--sans);
+    text-transform:uppercase;
+    letter-spacing:.22em;
+    font-size:.72rem;
+    font-weight:600;
+    color:var(--taupe);
+    display:inline-block;
+  }
+  strong{color:var(--navy);font-weight:600}
+  em{font-style:italic}
+
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+  .narrow{max-width:820px;margin:0 auto}
+
+  section{padding:96px 0}
+  .beige{background:var(--beige)}
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex;align-items:center;gap:.6em;
+    font-family:var(--sans);font-weight:600;font-size:1.02rem;
+    background:var(--navy);color:var(--bg);
+    padding:18px 34px;border-radius:999px;
+    text-decoration:none;border:1px solid var(--navy);
+    transition:all .25s ease;
+    box-shadow:0 8px 26px -12px rgba(10,37,64,.55);
+  }
+  .btn:hover{background:#0d2f52;transform:translateY(-2px);box-shadow:0 14px 34px -12px rgba(10,37,64,.6)}
+  .btn .arrow{font-size:1.15em;transition:transform .25s ease}
+  .btn:hover .arrow{transform:translateX(4px)}
+  .btn-outline{
+    background:transparent;color:var(--navy);border:1px solid var(--marron);
+    box-shadow:none;
+  }
+  .btn-outline:hover{background:var(--rosa-clarito);border-color:var(--rosa-medio);color:var(--navy)}
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(248,246,243,.82);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(196,181,165,.4);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .brand{font-family:var(--serif);font-size:1.28rem;color:var(--navy);font-weight:600;text-decoration:none;letter-spacing:.01em}
+  .brand span{color:var(--rosa-medio);font-style:italic}
+  .nav-links{display:flex;gap:34px;align-items:center}
+  .nav-links a{
+    font-size:.74rem;text-transform:uppercase;letter-spacing:.16em;font-weight:600;
+    color:var(--taupe);text-decoration:none;transition:color .2s;
+  }
+  .nav-links a:hover{color:var(--rosa-medio)}
+  .nav-cta{
+    background:var(--navy);color:var(--bg)!important;padding:11px 22px;border-radius:999px;
+    letter-spacing:.08em!important;
+  }
+  .nav-cta:hover{background:#0d2f52;color:var(--bg)!important}
+  .menu-btn{display:none}
+
+  /* ---------- Hero ---------- */
+  .hero{padding:78px 0 90px;position:relative;overflow:hidden}
+  .hero-inner{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+  .hero h1{font-size:clamp(2.5rem,5vw,4rem);margin:20px 0 26px;font-weight:600}
+  .hero p.sub{font-size:1.15rem;max-width:560px;color:var(--body-text)}
+  .badges{display:flex;flex-wrap:wrap;gap:12px;margin:34px 0 38px}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--rosa-clarito);border:1px solid var(--marron);
+    color:var(--navy);font-size:.86rem;font-weight:500;
+    padding:9px 16px;border-radius:999px;
+  }
+  .badge svg{width:15px;height:15px;color:var(--rosa-medio)}
+  .hero-visual{
+    position:relative;
+    aspect-ratio:4/5;
+    border-radius:230px 230px 18px 18px;
+    background:linear-gradient(160deg,var(--rosa-clarito),var(--beige));
+    border:1px solid var(--marron);
+    display:flex;align-items:center;justify-content:center;
+    overflow:hidden;
+  }
+  .hero-visual .quote-card{
+    position:relative;text-align:center;padding:44px 34px;
+  }
+  .hero-visual .qmark{font-family:var(--serif);font-size:6rem;color:var(--rosa-medio);line-height:.5;opacity:.55}
+  .hero-visual .q-text{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--navy);margin-top:18px;line-height:1.35}
+  .hero-visual .q-name{margin-top:22px;font-size:.72rem;text-transform:uppercase;letter-spacing:.2em;color:var(--taupe);font-weight:600}
+
+  /* ---------- Problem ---------- */
+  .lead{font-size:1.3rem;font-family:var(--serif);color:var(--navy);line-height:1.4;margin-bottom:34px}
+  .pain-list{list-style:none;display:grid;gap:16px;margin:0 auto;max-width:720px}
+  .pain-list li{
+    display:flex;gap:15px;align-items:flex-start;
+    background:var(--bg);border:1px solid var(--marron);
+    padding:18px 22px;border-radius:14px;font-size:1.02rem;
+  }
+  .beige .pain-list li{background:var(--rosa-clarito)}
+  .x-ico,.check-ico{flex-shrink:0;width:24px;height:24px;margin-top:1px}
+  .reality{
+    margin-top:38px;max-width:720px;margin-left:auto;margin-right:auto;
+    padding:26px 30px;border-left:3px solid var(--rosa-medio);
+    background:var(--rosa-clarito);border-radius:0 14px 14px 0;font-size:1.08rem;
+  }
+
+  /* ---------- Myth box ---------- */
+  .myth-box{
+    max-width:860px;margin:0 auto;
+    background:var(--rosa-clarito);
+    border:1px solid var(--marron);
+    border-radius:24px;
+    padding:52px 54px;
+    box-shadow:0 30px 70px -40px rgba(10,37,64,.35);
+  }
+  .myth-box .warn{font-size:.78rem;text-transform:uppercase;letter-spacing:.2em;color:var(--taupe);font-weight:700;display:flex;align-items:center;gap:9px;margin-bottom:16px}
+  .myth-box h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-bottom:24px}
+  .myth-box h2 .q{color:var(--rosa-medio);font-style:italic;font-weight:500}
+  .myth-box p{margin-bottom:16px}
+  .juega-list{list-style:none;display:grid;gap:14px;margin:22px 0}
+  /* Marcador posicionado, no flex: evita que <strong>/<em> se partan en columnas */
+  .juega-list li{position:relative;padding-left:22px}
+  .juega-list li::before{
+    content:"";position:absolute;left:0;top:9px;width:9px;height:9px;border-radius:50%;
+    background:var(--rosa-medio);
+  }
+  .myth-close{
+    margin-top:26px;font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--navy);
+    text-align:center;line-height:1.4;
+  }
+
+  /* ---------- Solution ---------- */
+  .solution{text-align:center}
+  .solution .narrow > p{font-size:1.22rem;margin-bottom:24px;color:var(--body-text)}
+  .solution h2{font-size:clamp(1.9rem,3.4vw,2.6rem);margin-bottom:34px}
+  .solution .kicker{font-family:var(--serif);font-style:italic;font-size:1.7rem;color:var(--rosa-medio);margin-top:12px}
+
+  /* ---------- Modules ---------- */
+  .sec-head{text-align:center;margin-bottom:56px}
+  .sec-head h2{font-size:clamp(2rem,3.6vw,2.8rem);margin-top:14px}
+  .modules{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+  .module{
+    background:var(--bg);border:1px solid var(--marron);border-radius:20px;
+    padding:36px 34px;transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .beige .module{background:var(--rosa-clarito)}
+  .module:hover{transform:translateY(-4px);box-shadow:0 24px 50px -34px rgba(10,37,64,.4)}
+  .module .num{
+    font-family:var(--serif);font-size:.9rem;font-weight:700;color:var(--rosa-medio);
+    text-transform:uppercase;letter-spacing:.12em;display:block;margin-bottom:6px;
+  }
+  .module h3{font-size:1.4rem;margin-bottom:18px}
+  .module ul{list-style:none;display:grid;gap:12px}
+  .module ul li{position:relative;padding-left:31px;font-size:.98rem}
+  .module ul li::before{
+    content:"";position:absolute;left:0;top:2px;width:20px;height:20px;border-radius:6px;
+    background:var(--rosa-clarito);border:1px solid var(--rosa-medio);
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D6A9A9' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+    background-size:13px;background-position:center;background-repeat:no-repeat;
+  }
+
+  /* ---------- Note box (navy) ---------- */
+  .note-box{
+    max-width:860px;margin:52px auto 0;
+    background:var(--navy);color:rgba(248,246,243,.88);
+    border-radius:20px;padding:32px 38px;
+    display:flex;gap:20px;align-items:flex-start;
+    box-shadow:0 26px 60px -42px rgba(10,37,64,.7);
+  }
+  .note-box .note-ico{
+    flex-shrink:0;width:40px;height:40px;border-radius:11px;
+    background:rgba(214,169,169,.16);display:flex;align-items:center;justify-content:center;
+  }
+  .note-box .note-ico svg{width:20px;height:20px;color:var(--rosa-medio)}
+  .note-box p{font-size:1.02rem;line-height:1.6}
+  .note-box strong{color:var(--rosa-medio)}
+
+  /* ---------- Includes ---------- */
+  .includes{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:960px;margin:0 auto}
+  .inc-item{
+    display:flex;gap:15px;align-items:flex-start;
+    background:var(--rosa-clarito);border:1px solid var(--marron);
+    padding:24px 24px;border-radius:16px;
+  }
+  .inc-item .ico{flex-shrink:0;width:38px;height:38px;border-radius:10px;background:var(--navy);display:flex;align-items:center;justify-content:center}
+  .inc-item .ico svg{width:19px;height:19px;color:var(--rosa-medio)}
+  .inc-item h4{font-size:1.02rem;font-family:var(--sans);font-weight:700;color:var(--navy);margin-bottom:3px;line-height:1.3}
+  .inc-item p{font-size:.9rem;color:var(--taupe)}
+
+  /* ---------- For whom ---------- */
+  .whom{display:grid;grid-template-columns:1fr 1fr;gap:30px;max-width:960px;margin:0 auto}
+  .whom-col{border-radius:20px;padding:38px 36px;border:1px solid var(--marron)}
+  .whom-yes{background:var(--rosa-clarito)}
+  .whom-no{background:var(--bg)}
+  .whom-col h3{font-size:1.35rem;margin-bottom:22px;display:flex;align-items:center;gap:11px}
+  .whom-col ul{list-style:none;display:grid;gap:16px}
+  .whom-col li{display:flex;gap:13px;align-items:flex-start;font-size:1rem}
+
+  /* ---------- Author ---------- */
+  .author{display:grid;grid-template-columns:.72fr 1.28fr;gap:52px;align-items:center;max-width:1000px;margin:0 auto}
+  .author-photo{
+    aspect-ratio:4/5;max-width:300px;width:100%;border-radius:170px 170px 16px 16px;
+    background:linear-gradient(160deg,var(--beige),var(--marron));
+    border:1px solid var(--marron);display:flex;align-items:center;justify-content:center;
+    overflow:hidden;position:relative;
+  }
+  .author-photo .initials{font-family:var(--serif);font-size:4.4rem;color:var(--bg);opacity:.85}
+  .author-photo .ph-label{position:absolute;bottom:20px;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--bg);opacity:.8}
+  /* Si existe el archivo de foto, tapa el placeholder de iniciales */
+  .author-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;z-index:2}
+  .author h2{font-size:clamp(1.8rem,3.2vw,2.4rem);margin:14px 0 22px}
+  .author p{margin-bottom:18px;font-size:1.06rem}
+  .author .italic-block{font-family:var(--serif);font-style:italic;font-size:1.2rem;color:var(--rosa-medio);line-height:1.45}
+  .author .punch{font-family:var(--serif);font-size:1.5rem;color:var(--navy);font-weight:600;margin-top:8px}
+
+
+  /* ---------- Sello FALSO (mito) ---------- */
+  .false-tag{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--navy);color:var(--bg);
+    font-family:var(--sans);font-size:.72rem;font-weight:700;
+    text-transform:uppercase;letter-spacing:.2em;
+    padding:7px 16px;border-radius:999px;margin-bottom:20px;
+  }
+
+  /* ---------- Caja LEXA ---------- */
+  .lexa-box{
+    margin-top:30px;padding:28px 30px;border-radius:18px;
+    background:var(--bg);border:1px solid var(--rosa-medio);
+  }
+  .lexa-box .lexa-tag{
+    display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;
+    letter-spacing:.2em;color:var(--rosa-medio);margin-bottom:12px;
+  }
+  .lexa-box p:last-child{margin-bottom:0}
+  .lexa-box .lexa-punch{
+    font-family:var(--serif);font-style:italic;font-size:1.12rem;color:var(--navy);
+  }
+
+  /* ---------- Bonus LEXA (qué incluye) ---------- */
+  .bonus{
+    max-width:960px;margin:26px auto 0;
+    background:var(--navy);color:rgba(248,246,243,.88);
+    border-radius:20px;padding:38px 42px;
+    box-shadow:0 26px 60px -42px rgba(10,37,64,.7);
+  }
+  .bonus .bonus-tag{
+    display:inline-block;background:var(--rosa-medio);color:var(--navy);
+    font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.18em;
+    padding:7px 16px;border-radius:999px;margin-bottom:16px;
+  }
+  .bonus h3{color:var(--bg);font-size:1.5rem;margin-bottom:12px}
+  .bonus h3 em{color:var(--rosa-medio)}
+  .bonus p{font-size:1rem;line-height:1.6;margin-bottom:12px}
+  .bonus p:last-child{margin-bottom:0}
+  .bonus .bonus-meta{
+    margin-top:18px;padding-top:16px;border-top:1px solid rgba(196,181,165,.28);
+    font-size:.92rem;color:rgba(248,246,243,.72);
+  }
+  .bonus .bonus-meta strong{color:var(--rosa-medio)}
+
+  /* ---------- Botón centrado dentro de sección ---------- */
+  .cta-center{text-align:center;margin-top:46px}
+
+  /* ---------- Price ---------- */
+  .price-card{
+    max-width:640px;margin:0 auto;text-align:center;
+    background:var(--rosa-clarito);border:1px solid var(--marron);
+    border-radius:26px;padding:56px 48px;
+    box-shadow:0 34px 80px -46px rgba(10,37,64,.4);position:relative;
+  }
+  .price-card h3{font-size:1.7rem;margin-bottom:10px}
+  .price-card .meta{font-family:var(--serif);font-style:italic;color:var(--taupe);margin-bottom:30px}
+  .price-old{color:var(--taupe);text-decoration:line-through;font-size:1.15rem}
+  .price-new{font-family:var(--serif);font-size:3.2rem;color:var(--navy);font-weight:700;line-height:1;margin:8px 0 4px}
+  .price-new small{font-size:1.1rem;color:var(--taupe);font-weight:500}
+  .price-launch{font-size:.82rem;text-transform:uppercase;letter-spacing:.14em;color:var(--rosa-medio);font-weight:700;margin-bottom:26px}
+  .price-note{
+    margin:0 0 30px;padding-top:24px;border-top:1px solid var(--marron);
+    font-size:.98rem;line-height:1.55;color:var(--body-text);
+  }
+  .price-note .pn-title{display:block;font-family:var(--serif);font-size:1.3rem;font-weight:600;margin-bottom:8px}
+
+  /* ---------- FAQ ---------- */
+  .faq{max-width:800px;margin:0 auto}
+  .faq-item{border-bottom:1px solid var(--marron)}
+  .faq-q{
+    width:100%;text-align:left;background:none;border:none;cursor:pointer;
+    font-family:var(--serif);font-size:1.2rem;color:var(--navy);font-weight:600;
+    padding:26px 44px 26px 0;position:relative;
+  }
+  .faq-q::after{
+    content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);
+    font-family:var(--sans);font-size:1.6rem;color:var(--rosa-medio);transition:transform .3s;
+  }
+  .faq-item.open .faq-q::after{content:"–"}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+  .faq-a p{padding:0 0 26px;font-size:1.02rem}
+
+  /* ---------- Final CTA ---------- */
+  .final{background:var(--navy);color:var(--bg);text-align:center}
+  .final h2{color:var(--bg);font-size:clamp(2rem,3.6vw,2.8rem);margin-bottom:24px}
+  .final h2 .accent{color:var(--rosa-medio)}
+  .final p{max-width:640px;margin:0 auto 20px;color:rgba(248,246,243,.85);font-size:1.12rem}
+  .final .eyebrow{color:var(--rosa-medio)}
+  .final .btn{background:var(--rosa-medio);color:var(--navy);border-color:var(--rosa-medio);margin-top:22px}
+  .final .btn:hover{background:#e0b9b9}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--navy);border-top:1px solid rgba(196,181,165,.25);padding:40px 0;text-align:center}
+  footer p{color:rgba(248,246,243,.6);font-size:.85rem}
+  footer .brand-f{font-family:var(--serif);color:var(--bg);font-size:1.15rem;margin-bottom:8px}
+  footer .brand-f span{color:var(--rosa-medio);font-style:italic}
+
+  /* ---------- Reveal animation ---------- */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- Responsive ---------- */
+  @media(max-width:900px){
+    .hero-inner{grid-template-columns:1fr;gap:40px}
+    .hero-visual{max-width:380px;margin:0 auto;width:100%}
+    .modules{grid-template-columns:1fr}
+    .whom{grid-template-columns:1fr}
+    .author{grid-template-columns:1fr;gap:36px}
+    .author-photo{max-width:320px;margin:0 auto;width:100%}
+    .nav-links a:not(.nav-cta){display:none}
+  }
+  @media(max-width:560px){
+    section{padding:70px 0}
+    .myth-box,.price-card{padding:38px 26px}
+    .bonus{padding:30px 24px}
+    .lexa-box{padding:22px 20px}
+    .wrap{padding:0 20px}
+    .brand{font-size:1.05rem}
+    .reality,.myth-close{font-size:1rem}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand">Inglés de Alto Impacto <span>· Alicia Di Paolo</span></a>
+    <nav class="nav-links">
+      <a href="#problema">El problema</a>
+      <a href="#logros">El curso</a>
+      <a href="#autora">Quién soy</a>
+      <a href="#faqs">FAQs</a>
+      <a href="#precio" class="nav-cta">Acceder al curso</a>
+    </nav>
+  </div>
+</header>
+
+<span id="top"></span>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="reveal in">
+      <span class="eyebrow">Entrevistas Laborales en Inglés · By Alicia Di Paolo</span>
+      <h1>El puesto no se consigue con el CV.<br><span class="accent">Se consigue en la entrevista.</span></h1>
+      <p class="sub">Los trabajos ya no son para siempre. Cuando aparezca tu próxima oportunidad, no alcanza con "saber" inglés: necesitás saber <strong>qué responder</strong>, <strong>cómo comunicar tu valor</strong> y <strong>sostener la presión</strong> sin bloquearte.</p>
+      <div class="badges">
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 100% Online y a tu ritmo</span>
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg> +4 horas de clases cortas y dinámicas</span>
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/><path d="M19 10v1a7 7 0 0 1-14 0v-1M12 18v4M8 22h8"/></svg> Acceso a LEXA: Entrenadora Virtual con feedback personalizado</span>
+        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Acceso inmediato al curso, sin fecha de vencimiento</span>
+      </div>
+      <a href="#precio" class="btn"><span class="arrow">→</span> Quiero preparar mi próxima entrevista</a>
+    </div>
+    <div class="hero-visual reveal in">
+      <div class="quote-card">
+        <div class="qmark">“</div>
+        <p class="q-text">Una entrevista no se memoriza.<br>Se entrena.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRECIO ================= -->
+<section class="beige" id="precio">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Empezá <span class="accent">hoy</span></h2>
+    </div>
+    <div class="price-card reveal">
+      <h3>Curso Online: Entrevistas Laborales en Inglés</h3>
+      <p class="meta">Entrenamiento completo · Acceso inmediato · Sin fecha de vencimiento</p>
+      <div class="price-old">Precio regular ARS $120.000</div>
+      <div class="price-new">ARS $78.000</div>
+      <div class="price-launch">Precio con descuento por tiempo limitado</div>
+      <p class="price-note"><strong class="pn-title">Empezás hoy.</strong>Acceso inmediato a los 4 módulos + todos los materiales. Avanzás a tu ritmo y volvés al contenido cada vez que tengas una entrevista. Tu compra incluye 4 meses de acceso a <strong>LEXA</strong>: tu Entrenadora Virtual de Entrevistas.</p>
+      <a href="https://inglesdealtoimpacto-aliciadipaolo.tiendup.com/curso/entrevistas-laborales-en-ingles-preguntas-frecuentes-respuestas-estrategicas-y-entrenamiento-para-comunicar-con-confianza" target="_blank" rel="noopener" class="btn"><span class="arrow">→</span> Quiero preparar mi próxima entrevista</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUIÉN SOY ================= -->
+<section id="autora">
+  <div class="wrap">
+    <div class="author">
+      <div class="author-photo reveal">
+        <!-- La foto "AliciaDiPaolo.png" debe estar en la misma carpeta que este HTML.
+             Si el archivo faltara, se muestra el placeholder ADP de abajo. -->
+        <img class="author-img" src="AliciaDiPaolo.png" alt="Alicia Di Paolo, mentora de inglés profesional" onerror="this.remove()">
+        <span class="initials">ADP</span>
+        <span class="ph-label">Alicia Di Paolo</span>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Quién soy</span>
+        <h2>No enseño inglés. <span class="accent">Entreno profesionales.</span></h2>
+        <p><strong>Soy Alicia Di Paolo,</strong> mentora de inglés profesional con más de <strong>30 años de experiencia</strong> entrenando a gerentes, directores e ingenieros de multinacionales.</p>
+        <p class="italic-block">Mi enfoque no es enseñarte reglas gramaticales ni listas de vocabulario. Es darte las herramientas para que te comuniques con la autoridad y la seguridad que exige una entrevista.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROBLEMA ================= -->
+<section class="beige" id="problema">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">El problema</span>
+      <h2>Tenés todo... <span class="accent">menos la fluidez y la confianza en inglés</span></h2>
+    </div>
+    <p class="lead narrow reveal" style="text-align:center">Tenés la formación, los años de trayectoria y el conocimiento. Pero cuando la entrevista es en inglés... <em>algo se traba.</em></p>
+    <ul class="pain-list reveal">
+      <li><svg class="x-ico" viewBox="0 0 24 24" fill="none" stroke="#D6A9A9" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg> Te bloqueás buscando la palabra "perfecta".</li>
+      <li><svg class="x-ico" viewBox="0 0 24 24" fill="none" stroke="#D6A9A9" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg> Dudás de tu pronunciación y perdés la soltura que tenés en español.</li>
+      <li><svg class="x-ico" viewBox="0 0 24 24" fill="none" stroke="#D6A9A9" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg> Sentís que transmitís un perfil de menor nivel al que realmente tenés.</li>
+      <li><svg class="x-ico" viewBox="0 0 24 24" fill="none" stroke="#D6A9A9" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg> Te ponés nervioso y terminás diciendo menos de lo que querías, y con ideas sueltas, sin estructura ni hilo conductor.</li>
+    </ul>
+    <p class="reality reveal"><strong>Y esto tiene un costo real:</strong> muchas oportunidades no se pierden por falta de capacidad o experiencia, sino por <strong>no saber comunicar tu valor en la entrevista en inglés.</strong></p>
+    <div class="cta-center reveal">
+      <a href="#precio2" class="btn"><span class="arrow">→</span> Acceder al curso</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MITO ================= -->
+<section>
+  <div class="wrap">
+    <div class="myth-box reveal">
+      <span class="warn">⚠ El mito que te hace perder oportunidades</span>
+      <h2><span class="q">“Con memorizar algunas respuestas hechas con IA alcanza.”</span></h2>
+      <span class="false-tag">Falso</span>
+      <p>La inteligencia artificial puede ayudarte a encontrar ideas, mejorar una respuesta o corregir tu inglés. Pero en una entrevista real, <strong>nadie responde por vos.</strong></p>
+      <p>Una entrevista laboral no es un guión aprendido de memoria. Es una <strong>situación de alta presión en tiempo real.</strong></p>
+      <p>Cuando estás frente al entrevistador, no sólo se pone en juego tu nivel de inglés, sino también:</p>
+      <ul class="juega-list">
+        <li>Cómo manejás la presión ante una pregunta inesperada.</li>
+        <li>Cómo estructurás tus ideas sobre la marcha.</li>
+        <li>Cómo transmitís seguridad y autoridad.</li>
+        <li>Y cómo te recuperás si algo no sale como esperabas.</li>
+      </ul>
+      <p>Recuperarte significa saber <strong>cómo retomar el hilo, salir de un bloqueo y reencuadrar tu idea con claridad</strong> si te equivocás o te quedás en blanco, sin perder la compostura ni la seguridad.</p>
+      <p>Repetir respuestas de memoria puede volverte rígido y dejarte sin recursos ante el primer imprevisto.</p>
+      <p class="myth-close">Las entrevistas no se memorizan.<br><em style="color:var(--rosa-medio)">Se entrenan.</em></p>
+      <div class="lexa-box">
+        <span class="lexa-tag">Entrenamiento en la práctica</span>
+        <p>Y para entrenarlas en la práctica, contás con <strong>LEXA</strong>, tu Entrenadora Virtual de Entrevistas.</p>
+        <p>Con LEXA vas a poder simular entrevistas, enfrentarte a preguntas reales e inesperadas, entrenar tus respuestas, recibir feedback personalizado y volver a intentarlo todas las veces que necesites.</p>
+        <p class="lexa-punch">No usás la IA para que responda por vos. La usás para entrenar cómo responder con tus propias palabras.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOLUCIÓN ================= -->
+<section class="beige solution">
+  <div class="wrap narrow reveal">
+    <span class="eyebrow">La solución</span>
+    <h2>Este no es otro curso de gramática ni un listado de frases para memorizar como un robot.</h2>
+    <p>Es un <strong>entrenamiento completo</strong> para aprender <strong>cómo responder</strong>, <strong>cómo pensar</strong>, <strong>cómo estructurar tus ideas</strong> y <strong>cómo comunicarte con seguridad</strong> en entrevistas laborales en inglés.</p>
+    <p>Porque una entrevista no es un examen de inglés. Es una situación de <strong>comunicación profesional.</strong></p>
+    <p class="kicker">Y eso se entrena.</p>
+  </div>
+</section>
+
+<!-- ================= MÓDULOS ================= -->
+<section id="logros">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Cuatro módulos, un mismo objetivo: <span class="accent">tu próximo puesto</span></h2>
+    </div>
+    <div class="modules">
+      <div class="module reveal">
+        <span class="num">Módulo 01</span>
+        <h3>Mindset &amp; Presencia de Impacto</h3>
+        <ul>
+          <li>Desactivá el bloqueo mental y la parálisis por el error antes de empezar.</li>
+          <li>Proyectá lenguaje corporal y presencia ejecutiva a través de la pantalla o presencial.</li>
+          <li>La técnica exacta para salir airoso cuando no entendés una pregunta o te trabás.</li>
+        </ul>
+      </div>
+      <div class="module reveal">
+        <span class="num">Módulo 02</span>
+        <h3>Estrategia y Estructura de Respuesta</h3>
+        <ul>
+          <li>Aprendé cómo se estructura una entrevista laboral en inglés.</li>
+          <li>Estructurá tus respuestas con soltura, usando vocabulario corporativo clave.</li>
+          <li>Aprendé a responder preguntas difíciles con claridad y profesionalismo.</li>
+        </ul>
+      </div>
+      <div class="module reveal">
+        <span class="num">Módulo 03</span>
+        <h3>Dominio de las Preguntas Clave</h3>
+        <ul>
+          <li>Respondé de forma efectiva y ordenada las preguntas que SIEMPRE toman: <em>"Tell me about yourself"</em>, <em>"Strengths &amp; Weaknesses"</em>, <em>"Why should we hire you?"</em></li>
+          <li>Usá el <em>storytelling</em> profesional para destacar tus logros reales.</li>
+          <li>Integrá coherencia, velocidad y profesionalismo en tus respuestas.</li>
+        </ul>
+      </div>
+      <div class="module reveal">
+        <span class="num">Módulo 04</span>
+        <h3>Simulación bajo Presión y Cierre</h3>
+        <ul>
+          <li>Metodología práctica para entrenar solo en casa antes del día D.</li>
+          <li>Checklist definitivo de preparación previa y protocolo post entrevista.</li>
+          <li>Cómo mantener el control de la conversación hasta el último minuto.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note-box reveal">
+      <div class="note-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></div>
+      <p><strong>Importante:</strong> todas las técnicas que aprendés en este curso te sirven también para entrevistas en español. Las estrategias, la estructura y el manejo de los nervios funcionan de la misma manera en cualquier idioma.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUÉ INCLUYE ================= -->
+<section class="beige">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Qué incluye el curso</span>
+      <h2>Todo lo que necesitás, <span class="accent">en un sólo lugar</span></h2>
+    </div>
+    <div class="includes">
+      <div class="inc-item reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+        <div><h4>+4 horas de videoclases cortas y dinámicas</h4><p>Organizadas en 4 módulos estratégicos.</p></div>
+      </div>
+      <div class="inc-item reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15l2 2 4-4"/></svg></div>
+        <div><h4>Guías, checklists y plantillas</h4><p>Editables, para armar tu guión de entrevista.</p></div>
+      </div>
+      <div class="inc-item reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <div><h4>Expresiones estratégicas para entrevistas</h4><p>Expresiones de uso inmediato.</p></div>
+      </div>
+      <div class="inc-item reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 2"/></svg></div>
+        <div><h4>Estrategias reales</h4><p>Para responder natural, sin depender de la memoria.</p></div>
+      </div>
+      <div class="inc-item reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <div><h4>Acceso inmediato y sin fecha de vencimiento</h4><p>Repasalo cada vez que te citen a una entrevista, en inglés o en español.</p></div>
+      </div>
+    </div>
+
+    <div class="bonus reveal">
+      <span class="bonus-tag">Bonus incluido</span>
+      <h3>LEXA: <em>tu Entrenadora Virtual de Entrevistas</em></h3>
+      <p>Practicá preguntas reales, simulá entrevistas y entrená tus respuestas todas las veces que necesites, recibiendo feedback inmediato y personalizado en función de tus respuestas para mejorar con cada práctica.</p>
+      <p class="bonus-meta"><strong>Acceso durante 4 meses.</strong> Una vez realizada la compra, recibirás por email el código de acceso a la entrenadora virtual dentro de las siguientes 24 horas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PARA QUIÉN ES ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Para quién es</span>
+      <h2>¿Es este curso <span class="accent">para vos?</span></h2>
+    </div>
+    <div class="whom">
+      <div class="whom-col whom-yes reveal">
+        <h3><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0A2540" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" fill="#D6A9A9" stroke="#D6A9A9"/><polyline points="8 12 11 15 16 9" stroke="#fff"/></svg> Sí, es para vos si...</h3>
+        <ul>
+          <li><svg class="check-ico" viewBox="0 0 24 24" fill="none" stroke="#8B7765" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Tenés conocimientos de inglés, no importa si está “oxidado” o si sentís que te falta práctica.</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" fill="none" stroke="#8B7765" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Querés avanzar en tu carrera o estar listo cuando te llamen para ese puesto que tanto soñás.</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" fill="none" stroke="#8B7765" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Sentís que en inglés "parecés" menos capaz de lo que sos en español.</li>
+          <li><svg class="check-ico" viewBox="0 0 24 24" fill="none" stroke="#8B7765" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Sabés que las oportunidades no se dejan a la suerte, sino a la preparación.</li>
+        </ul>
+      </div>
+      <div class="whom-col whom-no reveal">
+        <h3><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C4B5A5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M15 9l-6 6M9 9l6 6"/></svg> No es para vos si...</h3>
+        <ul>
+          <li><svg class="x-ico" viewBox="0 0 24 24" fill="none" stroke="#C4B5A5" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg> Recién estás empezando a aprender inglés.</li>
+          <li><svg class="x-ico" viewBox="0 0 24 24" fill="none" stroke="#C4B5A5" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg> Buscás una solución "mágica" sin dedicarle un par de horas de entrenamiento real.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRECIO ================= -->
+<section class="beige" id="precio2">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Empezá <span class="accent">hoy</span></h2>
+    </div>
+    <div class="price-card reveal">
+      <h3>Curso Online: Entrevistas Laborales en Inglés</h3>
+      <p class="meta">Entrenamiento completo · Acceso inmediato · Sin fecha de vencimiento</p>
+      <div class="price-old">Precio regular ARS $120.000</div>
+      <div class="price-new">ARS $78.000</div>
+      <div class="price-launch">Precio con descuento por tiempo limitado</div>
+      <p class="price-note"><strong class="pn-title">Empezás hoy.</strong>Acceso inmediato a los 4 módulos + todos los materiales. Avanzás a tu ritmo y volvés al contenido cada vez que tengas una entrevista. Tu compra incluye 4 meses de acceso a <strong>LEXA</strong>: tu Entrenadora Virtual de Entrevistas.</p>
+      <a href="https://inglesdealtoimpacto-aliciadipaolo.tiendup.com/curso/entrevistas-laborales-en-ingles-preguntas-frecuentes-respuestas-estrategicas-y-entrenamiento-para-comunicar-con-confianza" target="_blank" rel="noopener" class="btn"><span class="arrow">→</span> Quiero preparar mi próxima entrevista</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faqs">
+  <div class="wrap">
+    <div class="sec-head reveal" style="margin-bottom:38px">
+      <span class="eyebrow">Preguntas frecuentes</span>
+    </div>
+    <div class="faq reveal">
+      <div class="faq-item">
+        <button class="faq-q">¿Necesito hablar un inglés perfecto para hacer el curso?</button>
+        <div class="faq-a"><p><strong>No.</strong> Este curso no te enseña tiempos verbales, te enseña estrategia de comunicación profesional. Está pensado para quienes ya tienen base en inglés pero pierden confianza al hablar.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Cuánto tiempo lleva completarlo?</button>
+        <div class="faq-a"><p>Tiene +4 horas de contenido en video dividido en lecciones cortas. Podés completarlo en un fin de semana o verlo a tu ritmo.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿El acceso vence?</button>
+        <div class="faq-a"><p><strong>El acceso no vence.</strong> Una vez que comprás, el curso es tuyo.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Necesito tener una entrevista programada para hacer el curso?</button>
+        <div class="faq-a"><p><strong>No.</strong> De hecho, lo ideal es prepararte antes de necesitarlo. Así, cuando aparezca una oportunidad, ya tenés las herramientas y sólo necesitás adaptarlas al puesto y a la empresa.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Sirve si hace tiempo que no practico inglés?</button>
+        <div class="faq-a"><p><strong>Sí.</strong> Si ya tenés una base de inglés pero estás oxidado o perdiste confianza al hablar, el curso te ayuda a ordenar tus respuestas y recuperar seguridad en situaciones de entrevista.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="final">
+  <div class="wrap narrow reveal">
+    <h2>Las mejores oportunidades <span class="accent">no avisan.</span></h2>
+    <p>Suelen llegar con un mensaje, un mail, o una llamada, y una citación para esa misma semana. Sin tiempo para prepararte. Por eso, la diferencia entre conseguir el puesto o no está en estar listo antes de que aparezcan.</p>
+    <p>Dejá de improvisar y asegurate de estar listo <strong style="color:#fff">ANTES</strong> de que aparezca la oportunidad.</p>
+    <a href="#precio2" class="btn"><span class="arrow">→</span> Quiero prepararme hoy y comunicar mi verdadero valor</a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <p class="brand-f">Inglés de Alto Impacto <span>· Alicia Di Paolo</span></p>
+    <p>Entrenamiento de inglés profesional para entrevistas laborales de alto nivel.</p>
+    <p style="margin-top:10px">© <span id="year"></span> Alicia Di Paolo. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ---- Reveal on scroll ---- */
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  /* ---- FAQ accordion ---- */
+  document.querySelectorAll('.faq-q').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const item = btn.parentElement;
+      const ans = item.querySelector('.faq-a');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-a').style.maxHeight=null;});
+      if(!isOpen){ item.classList.add('open'); ans.style.maxHeight = ans.scrollHeight+'px'; }
+    });
+  });
+</script>
+</body>
+</html>
